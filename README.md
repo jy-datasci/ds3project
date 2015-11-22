@@ -19,7 +19,7 @@ written to a file named analysis.txt in the same directory as the script.
 The project first reads the test data, test subjects, and test activities into 
 separate variables. The activities (read into the yTest variable) are read as 
 characters, since this data will eventually be replaced by the activity 
-labels. The number of original columns in the test data is tored, so that it 
+labels. The number of original columns in the test data is stored, so that it 
 can be used to calculate the column index of the subject and activity columns, 
 which are added later to the right side of the data frame. The subject and 
 activity data is then added to the test set. 
