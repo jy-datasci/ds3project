@@ -2,10 +2,10 @@
 ##Course Project
 ###Overview
 This project has these files:
-*README.md: describes the script and how to run it
-*run_analysis.R: the R script that processes the data.  Output is written to
+* README.md: describes the script and how to run it
+* run_analysis.R: the R script that processes the data.  Output is written to
 analysis.txt
-*CodeBook.md: description of how the variables are chosen and named
+* CodeBook.md: description of how the variables are chosen and named
 
 
 ###Running the project
