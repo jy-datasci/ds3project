@@ -7,16 +7,15 @@ accessed from the DSS community site linked from the course site.
 ###Project description
 Given some sample data, combine the test and training sets. The data contains 
 30 subjects, each performing 6 activities, along with variables measuring and 
-calculating various values during each activity. The result is to create a 
+calculating various values during each activity. The goal is to create a 
 summary data set of the mean values for the means and standard deviation 
 columns in the original data for each combination of subject and activity.
 
 ###Data Processing
 The features_info.txt file included with the source data describes the 
-original organization of variables that make up the data, and how they were 
-calculated. The original variable names are in features.txt. The descriptions 
-for the files in the source data set is in the README.txt file included with 
-the source data.
+original variables that make up the data, and how they were calculated. The 
+original variable names are in features.txt. The descriptions for the files in 
+the source data set is in the README.txt file included with the source data. 
 
 The test/subject_test.txt and train/subject_train.txt files are added as a 
 subject column to the test and training data sets, respectively. The 
@@ -30,17 +29,17 @@ numbers in the activity column are replaced with their corresponding labels
 during the manipulation of the data.
 
 ###Cleaning the data
-*The test and training data sets are combined into one data set.
-*variables which contain either mean() or std() are separated as the subset
+* The test and training data sets are combined into one data set.
+* variables which contain either mean() or std() are separated as the subset
 of the data.
-*the activity numbers read with the source data are replaced with their
+* the activity numbers read with the source data are replaced with their
 corresponding labels.
-*Variable names are formatted to make them valid R names, and some period 
+* Variable names are formatted to make them valid R names, and some period 
 characters that are included as part of the formatting process are removed. 
 Some variables have the word "Body" twice in their names. While this is likely 
 an error with the original data, I decided to leave these as is to make 
 comparison easier with the original column names.
-* the data is melted to long format and then cast to wide format, with one row
+* The data is melted to long format and then cast to wide format, with one row
 for each combination of subject and activity in the source data.
 
 The readme.md file contains a more detailed description of the script.
